@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <main>
+        <section id="container">
+            <div id="container-cabecalho">
+                <div id=visor>
+                    <p id="resultado"></p>
+                </div>
+            </div>
+            <div id="container-corpo">
+                <div id="corpo-header">
+                    <label id="botoes">
+                        <input type="checkbox" name="btnOnOff" id="onOff" onclick="empty()">
+                        <div id="cxOnOff">
+                            <div id="button"></div>
+                        </div>
+                    </label>
+
+
+                </div>
+
+                <div id="corpo-body">
+                    <div id="primeiraColuna">
+                        <input type="button" class="padrao" id="btnClear" value="CLEAN" onclick="clean()">
+                        <input type="button" class="padrao" id="btnDelete" value="DELETE" onclick="remove()">
+                        <input type="button" class="padrao" value="%" onclick="insert('%')">
+                        <input type="button" class="padrao" value="7" onclick="insert('7')">
+                        <input type="button" class="padrao" value="8" onclick="insert('8')">
+                        <input type="button" class="padrao" value="9" onclick="insert('9')">
+                        <input type="button" class="padrao" value="4" onclick="insert('4')">
+                        <input type="button" class="padrao" value="5" onclick="insert('5')">
+                        <input type="button" class="padrao" value="6" onclick="insert('6')">
+                        <input type="button" class="padrao" value="1" onclick="insert('1')">
+                        <input type="button" class="padrao" value="2" onclick="insert('2')">
+                        <input type="button" class="padrao" value="3" onclick="insert('3')">
+                        <input type="button" class="padrao" value="." onclick="insert('.')">
+                        <input type="button" class="padrao" value="0" onclick="insert('0')">
+                        <input type="button" class="padrao" value="=" onclick="calculate()">
+                    </div>
+                    <div id="segundaColuna">
+                        <input type="button" class="padrao" value="/" onclick="insert('/')">
+                        <input type="button" class="padrao" id="btnMulti" value="*" onclick="insert('*')">
+                        <input type="button" class="padrao" value="-" onclick="insert('-')">
+                        <div id="containerSoma">
+                            <input type="button" id="btnSoma" value="+" onclick="insert('+')">
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>by <a href="http://www.github.com/BrunoDeSP" target="_blank">Bruno Barbosa</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
