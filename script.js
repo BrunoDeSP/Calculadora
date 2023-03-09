@@ -1,5 +1,9 @@
 let circulo = document.querySelector('input#onOff')
 
+
+
+
+
 function empty() {
     if (circulo.checked == 0) {
         var res = document.querySelector('p#resultado').innerHTML = "";

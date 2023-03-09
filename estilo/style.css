@@ -45,7 +45,7 @@ main {
 
 section#container {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 50px;
     width: 350px;
     height: 500px;
@@ -320,11 +320,29 @@ footer {
 }
 
 footer a {
+    display: flex;
     text-decoration: none;
-    color: white;
+    color: #000000;
 }
 
 footer a:hover {
-    text-decoration: underline;
-    font-weight: bold;
+    background: rgba(255, 255, 255, 0.582);
+    border-radius: 50%;
 }
+
+ion-icon {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    gap: 5px;
+    color: black;
+    pointer-events: none;
+}
+
+div#alertaAzul {
+    color: white;
+}
+
+
+
